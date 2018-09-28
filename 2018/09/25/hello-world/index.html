@@ -2,15 +2,27 @@
 
 
 
+
+
+
+
+
+
+
+
+
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion" lang="zh-CN">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
 <meta name="theme-color" content="#222">
+
+
+
 
 
 
@@ -38,10 +50,6 @@
 
 
 
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
 
 
 
@@ -50,49 +58,25 @@
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=6.4.1" rel="stylesheet" type="text/css" />
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.4.1">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.4.1">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.4.1">
 
 
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="Hexo, NexT" />
+  <link rel="mask-icon" href="/images/logo.svg?v=6.4.1" color="#222">
 
 
 
 
 
 
-
-
-
-
-<meta name="description" content="终于有了自己的小天地^_^那么……先记录一个坑吧……##使用hexo-admin插件时，需要在配置文件_config.yml中新增如下的部分：  如上，官方给的示意图上的password_hash是md5密码，而hexo-admin却明确表示需要使用bcrypt密码。 于是，我用java、python分别生成了一波bcrypt加密后的password_hash（bcrypt的特性是每次生成的随机散">
-<meta name="keywords" content="study life">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Hello Hexo">
-<meta property="og:url" content="http://yoursite.com/2018/09/25/hello-world/index.html">
-<meta property="og:site_name" content="Amazing lulu">
-<meta property="og:description" content="终于有了自己的小天地^_^那么……先记录一个坑吧……##使用hexo-admin插件时，需要在配置文件_config.yml中新增如下的部分：  如上，官方给的示意图上的password_hash是md5密码，而hexo-admin却明确表示需要使用bcrypt密码。 于是，我用java、python分别生成了一波bcrypt加密后的password_hash（bcrypt的特性是每次生成的随机散">
-<meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://images/pasted-2.png/">
-<meta property="og:updated_time" content="2018-09-28T02:55:52.605Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello Hexo">
-<meta name="twitter:description" content="终于有了自己的小天地^_^那么……先记录一个坑吧……##使用hexo-admin插件时，需要在配置文件_config.yml中新增如下的部分：  如上，官方给的示意图上的password_hash是md5密码，而hexo-admin却明确表示需要使用bcrypt密码。 于是，我用java、python分别生成了一波bcrypt加密后的password_hash（bcrypt的特性是每次生成的随机散">
-<meta name="twitter:image" content="http://images/pasted-2.png/">
 
 
 
@@ -101,15 +85,13 @@
   var CONFIG = {
     root: '/',
     scheme: 'Pisces',
-    version: '5.1.4',
+    version: '6.4.1',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -121,12 +103,40 @@
 </script>
 
 
+  
+
+
+
+
+  <meta name="description" content="终于有了自己的小天地^_^那么……先记录一个坑吧……##使用hexo-admin插件时，需要在配置文件_config.yml中新增如下的部分：  如上，官方给的示意图上的password_hash是md5密码，而hexo-admin却明确表示需要使用bcrypt密码。 于是，我用java、python分别生成了一波bcrypt加密后的password_hash（bcrypt的特性是每次生成的随机散">
+<meta name="keywords" content="study life">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hello Hexo">
+<meta property="og:url" content="http://yoursite.com/2018/09/25/hello-world/index.html">
+<meta property="og:site_name" content="Amazing lulu">
+<meta property="og:description" content="终于有了自己的小天地^_^那么……先记录一个坑吧……##使用hexo-admin插件时，需要在配置文件_config.yml中新增如下的部分：  如上，官方给的示意图上的password_hash是md5密码，而hexo-admin却明确表示需要使用bcrypt密码。 于是，我用java、python分别生成了一波bcrypt加密后的password_hash（bcrypt的特性是每次生成的随机散">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://images/pasted-2.png/">
+<meta property="og:updated_time" content="2018-09-28T02:55:52.605Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hello Hexo">
+<meta name="twitter:description" content="终于有了自己的小天地^_^那么……先记录一个坑吧……##使用hexo-admin插件时，需要在配置文件_config.yml中新增如下的部分：  如上，官方给的示意图上的password_hash是md5密码，而hexo-admin却明确表示需要使用bcrypt密码。 于是，我用java、python分别生成了一波bcrypt加密后的password_hash（bcrypt的特性是每次生成的随机散">
+<meta name="twitter:image" content="http://images/pasted-2.png/">
+
+
+
+
+
 
   <link rel="canonical" href="http://yoursite.com/2018/09/25/hello-world/"/>
 
 
 
-
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
 
   <title>Hello Hexo | Amazing lulu</title>
   
@@ -138,9 +148,37 @@
 
 
 
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
   
@@ -150,25 +188,25 @@
   <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
+    <a href="https://github.com/gaolu9595"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">Amazing lulu</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-      
-        <p class="site-subtitle"></p>
-      
+    
   </div>
 
   <div class="site-nav-toggle">
-    <button>
+    <button aria-label="切换导航栏">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -176,35 +214,66 @@
   </div>
 </div>
 
-<nav class="site-nav">
-  
 
+
+<nav class="site-nav">
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于我</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-schedule">
+    <a href="/schedule/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />日程表</a>
+  </li>
 
       
+      
     </ul>
+  
+
   
 
   
@@ -212,12 +281,23 @@
 
 
 
- </div>
+  
+
+
+
+</div>
     </header>
+
+    
+
 
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
+            
+
+          
           <div id="content" class="content">
             
 
@@ -230,6 +310,8 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
@@ -238,9 +320,9 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/25/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="lulu">
+      <meta itemprop="description" content="小露露的工作与生活">
+      <meta itemprop="image" content="/images/background_sakura.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -252,11 +334,19 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello Hexo</h1>
+          <h1 class="post-title" itemprop="name headline">Hello Hexo
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -264,13 +354,30 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-25T15:03:00+08:00">
-                2018-09-25
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2018-09-25 15:03:00" itemprop="dateCreated datePublished" datetime="2018-09-25T15:03:00+08:00">2018-09-25</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-09-28 10:55:52" itemprop="dateModified" datetime="2018-09-28T10:55:52+08:00">2018-09-28</time>
+              
             
           </span>
 
@@ -319,6 +426,9 @@
 <h4 id="妙啊"><a href="#妙啊" class="headerlink" title="妙啊"></a>妙啊</h4>
       
     </div>
+
+    
+
     
     
     
@@ -348,17 +458,10 @@
   </article>
 
 
-
-    <div class="post-spread">
-      
-    </div>
   </div>
 
 
           </div>
-          
-
-
           
 
   
@@ -398,39 +501,46 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <p class="site-author-name" itemprop="name">John Doe</p>
+              <img class="site-author-image" itemprop="image"
+                src="/images/background_sakura.jpg"
+                alt="lulu" />
+            
+              <p class="site-author-name" itemprop="name">lulu</p>
               <p class="site-description motion-element" itemprop="description">小露露的工作与生活</p>
           </div>
 
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
+          
+            <nav class="site-state motion-element">
               
-                <a href="/archives/">
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
               
-                  <span class="site-state-item-count">1</span>
-                  <span class="site-state-item-name">日志</span>
-                </a>
-              </div>
+
+              
+
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
             
-
-            
-
-            
-
-          </nav>
-
           
-
-          
-
-          
-          
-
-          
-          
-
           
 
         </div>
@@ -467,16 +577,20 @@
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
+  <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">lulu</span>
+
+  
 
   
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动 v3.7.1</div>
 
 
 
@@ -484,12 +598,13 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+  <div class="theme-info">主题 – <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Pisces</a> v6.4.1</div>
 
 
 
 
         
+
 
 
 
@@ -509,7 +624,10 @@
     
 
     
+	
+    
 
+    
   </div>
 
   
@@ -528,7 +646,13 @@
 
 
 
+
+
+
+
+
   
+
 
 
 
@@ -548,16 +672,6 @@
 
   
   
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
     <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
   
 
@@ -568,53 +682,39 @@
 
   
   
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
   
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=6.4.1"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=6.4.1"></script>
 
 
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.4.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.4.1"></script>
 
 
 
   
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.4.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.4.1"></script>
 
 
 
   
 
 
-  
-
-
-
-
-	
-
-
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.4.1"></script>
 
 
 
@@ -622,11 +722,7 @@
 
 
 
-
-
   
-
-
 
 
 
@@ -650,6 +746,8 @@
   
 
   
+
+  
   
 
   
@@ -657,6 +755,18 @@
   
 
   
+
+  
+
+  
+
+
+<!-- 页面点击小心心 -->
+<script type="text/javascript" src="/js/src/clicklove.js"></script>
+
 
 </body>
 </html>
+
+
+
