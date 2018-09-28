@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     
-    <title>Hello World | Amazing lulu</title>
+    <title>Hello Hexo | Amazing lulu</title>
     <meta name="renderer" content="webkit">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -12,18 +12,24 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+    <meta name="description" content="终于有了自己的小天地^_^那么……先记录一个坑吧……##使用hexo-admin插件时，需要在配置文件_config.yml中新增如下的部分：
+
+如上，官方给的示意图上的password_hash是md5密码，而hexo-admin却明确表示需要使用bcrypt密码。
+于是，我用java、python分别生成了一波bcrypt加密后的password_hash（bcrypt的特性是每次生成的随机散">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Hello World | Amazing lulu">
-    <meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+    <meta name="twitter:title" content="Hello Hexo | Amazing lulu">
+    <meta name="twitter:description" content="终于有了自己的小天地^_^那么……先记录一个坑吧……##使用hexo-admin插件时，需要在配置文件_config.yml中新增如下的部分：
+
+如上，官方给的示意图上的password_hash是md5密码，而hexo-admin却明确表示需要使用bcrypt密码。
+于是，我用java、python分别生成了一波bcrypt加密后的password_hash（bcrypt的特性是每次生成的随机散">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Hello World | Amazing lulu">
-    <meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+    <meta property="og:title" content="Hello Hexo | Amazing lulu">
+    <meta property="og:description" content="终于有了自己的小天地^_^那么……先记录一个坑吧……##使用hexo-admin插件时，需要在配置文件_config.yml中新增如下的部分：
+
+如上，官方给的示意图上的password_hash是md5密码，而hexo-admin却明确表示需要使用bcrypt密码。
+于是，我用java、python分别生成了一波bcrypt加密后的password_hash（bcrypt的特性是每次生成的随机散">
 
     
     <meta name="author" content="John Doe">
@@ -89,11 +95,18 @@ Quick">
 
   <!-- Weibo-->
   
+  <li class="navigation__item">
+    <a href="https://weibo.com/u/3702302881" title="Weibo" target="_blank">
+      <i class='social fa fa-weibo'></i>
+      <span class="label">Weibo</span>
+    </a>
+  </li> 
+
 
   <!-- Github -->
   
   <li class="navigation__item">
-    <a href="https://github.com/monniya" title="GitHub" target="_blank">
+    <a href="https://github.com/gaolu9595" title="GitHub" target="_blank">
       <i class='social fa fa-github'></i>
       <span class="label">Github</span>
     </a>
@@ -110,13 +123,6 @@ Quick">
 
   
 <!-- Twitter -->
-
-  <li class="navigation__item">
-    <a href="https://twitter.com/onlymonniya" title="Twitter" target="_blank">
-      <i class='social fa fa-twitter'></i>
-      <span class="label">Twitter</span>
-    </a>
-  </li>
 
   
 
@@ -149,26 +155,31 @@ Quick">
 
   <header class="post-header">
     <div class="post-meta">
-      <time datetime="2018-09-25T07:03:46.210Z" class="post-list__meta--date date">2018-09-25</time> &#8226; <span class="post-meta__tags tags">于  </span>
+      <time datetime="2018-09-25T07:03:00.000Z" class="post-list__meta--date date">2018-09-25</time> &#8226; <span class="post-meta__tags tags">于  </span>
       <span class="page-pv">
        Read <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
       </span> 
    
     </div>
-    <h1 class="post-title">Hello World</h1>
+    <h1 class="post-title">Hello Hexo</h1>
   </header>
 
   <section class="post">
-    <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+    <h2 id="终于有了自己的小天地"><a href="#终于有了自己的小天地" class="headerlink" title="终于有了自己的小天地^_^"></a>终于有了自己的小天地^_^</h2><h4 id="那么……先记录一个坑吧……"><a href="#那么……先记录一个坑吧……" class="headerlink" title="那么……先记录一个坑吧……"></a>那么……先记录一个坑吧……</h4><p>##使用hexo-admin插件时，需要在配置文件_config.yml中新增如下的部分：</p>
+<p><img src="\\images\pasted-2.png\" alt="_config.yml中的admin配置"></p>
+<p>如上，官方给的示意图上的password_hash是md5密码，而hexo-admin却明确表示需要使用bcrypt密码。</p>
+<p>于是，我用java、python分别生成了一波bcrypt加密后的password_hash（bcrypt的特性是每次生成的随机散列值都不！一！样！），然后怀着激动的心情将如下密文paste在_config.yml的password_hash位置上。</p>
+<p>果不其然，出现了bug！    o(<em>￣︶￣</em>)o</p>
+<p>不管使用哪一个随机散列，输入的密码和配置的bcrypt密码都不对应。</p>
+<p>我百度啊百度，看到了这篇博客，恍然大悟，原来不同版本nodejs使用的hash算法不一样，自然和java、python等的hash算法也可能有所不同。</p>
+<p>顺着博客指导的操作，我使用nodejs的bcrypt算法计算出了我password的hash值，paste到配置文件，在git bash中输入“hexo server -d”</p>
+<p>问题解决了，完美登录！</p>
+<p>但是，我陷入了思考。</p>
+<p>对同样的字符串，bcrypt每次生成的密码都是不一样的，那么后台的登录逻辑到底是什么样的呢？</p>
+<p>于是我查了bcrypt判定password和password_hash是否一致的算法，如下：</p>
+<p>嗦嘎，原来是通过通过某种神秘算法，对我输入的password和预先配置好的password_hash进行计算，如果result==password_hash，那么匹配成功！</p>
+<p>不得不感叹，做密码学研究和信息安全的才是真大佬，这种神秘算法是怎么想出来的哟！</p>
+<h4 id="妙啊"><a href="#妙啊" class="headerlink" title="妙啊"></a>妙啊</h4>
   </section>
 
 </article>

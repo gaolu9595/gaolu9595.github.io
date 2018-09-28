@@ -86,11 +86,18 @@
 
   <!-- Weibo-->
   
+  <li class="navigation__item">
+    <a href="https://weibo.com/u/3702302881" title="Weibo" target="_blank">
+      <i class='social fa fa-weibo'></i>
+      <span class="label">Weibo</span>
+    </a>
+  </li> 
+
 
   <!-- Github -->
   
   <li class="navigation__item">
-    <a href="https://github.com/monniya" title="GitHub" target="_blank">
+    <a href="https://github.com/gaolu9595" title="GitHub" target="_blank">
       <i class='social fa fa-github'></i>
       <span class="label">Github</span>
     </a>
@@ -107,13 +114,6 @@
 
   
 <!-- Twitter -->
-
-  <li class="navigation__item">
-    <a href="https://twitter.com/onlymonniya" title="Twitter" target="_blank">
-      <i class='social fa fa-twitter'></i>
-      <span class="label">Twitter</span>
-    </a>
-  </li>
 
   
 
@@ -148,14 +148,16 @@
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/09/25/hello-world/" title="link to post.title">Hello World</a></h2>
+      <h2 class="post-list__post-title post-title"><a href="/2018/09/25/hello-world/" title="link to post.title">Hello Hexo</a></h2>
       <p class="excerpt">
     
-      Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick
+      终于有了自己的小天地^_^那么……先记录一个坑吧……##使用hexo-admin插件时，需要在配置文件_config.yml中新增如下的部分：
+
+如上，官方给的示意图上的password_hash是md5密码，而hexo-admin却明确表示需要使用bcrypt密码。
+于是，我用java、python分别生成了一波bcrypt加密后的password_hash（bcrypt的特性是每次生成的随机散
     &hellip;
       </p>
-      <div class="post-list__meta"><time datetime="2018-09-25T07:03:46.210Z" class="post-list__meta--date date">2018-09-25</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2018/09/25/hello-world/">继续阅读</a></div>
+      <div class="post-list__meta"><time datetime="2018-09-25T07:03:00.000Z" class="post-list__meta--date date">2018-09-25</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2018/09/25/hello-world/">继续阅读</a></div>
       <hr class="post-list__divider" />
     </li>
   
