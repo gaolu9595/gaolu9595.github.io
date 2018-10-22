@@ -14,7 +14,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-CN">
+<html class="theme-next gemini use-motion" lang="zh-CN">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -84,7 +84,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Pisces',
+    scheme: 'Gemini',
     version: '6.4.1',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: false,
@@ -108,27 +108,25 @@
 
 
 
-  <meta name="description" content="终于有了自己的小天地^_^那么……先记录一个坑吧……##使用hexo-admin插件时，需要在配置文件_config.yml中新增如下的部分：  如上，官方给的示意图上的password_hash是md5密码，而hexo-admin却明确表示需要使用bcrypt密码。 于是，我用java、python分别生成了一波bcrypt加密后的password_hash（bcrypt的特性是每次生成的随机散">
-<meta name="keywords" content="study life">
+  <meta name="description" content="反射在程序运行时动态创建对象和调用方法，而不需要在提前在程序中写死 Java反射相比较直接new对象而言，更加灵活，很适合框架开发，但是会有一些性能损耗 反射技术是IoC实现的基础，IoC通过读取配置文件来利用Java反射动态地创建对象和调用方法 Book book = null; // **包起来的是灵活可变的参数 try{ book = (Book)Class.forName(&amp;quot;*p">
+<meta name="keywords" content="Java反射,动态代理,设计模式">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello Hexo">
-<meta property="og:url" content="http://yoursite.com/2018/09/25/hello-world/index.html">
+<meta property="og:title" content="Java反射与动态代理">
+<meta property="og:url" content="http://yoursite.com/2018/10/22/Java反射与动态代理/index.html">
 <meta property="og:site_name" content="Amazing lulu">
-<meta property="og:description" content="终于有了自己的小天地^_^那么……先记录一个坑吧……##使用hexo-admin插件时，需要在配置文件_config.yml中新增如下的部分：  如上，官方给的示意图上的password_hash是md5密码，而hexo-admin却明确表示需要使用bcrypt密码。 于是，我用java、python分别生成了一波bcrypt加密后的password_hash（bcrypt的特性是每次生成的随机散">
+<meta property="og:description" content="反射在程序运行时动态创建对象和调用方法，而不需要在提前在程序中写死 Java反射相比较直接new对象而言，更加灵活，很适合框架开发，但是会有一些性能损耗 反射技术是IoC实现的基础，IoC通过读取配置文件来利用Java反射动态地创建对象和调用方法 Book book = null; // **包起来的是灵活可变的参数 try{ book = (Book)Class.forName(&amp;quot;*p">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://images/pasted-2.png/">
-<meta property="og:updated_time" content="2018-09-28T02:55:52.605Z">
+<meta property="og:updated_time" content="2018-10-22T03:15:17.944Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello Hexo">
-<meta name="twitter:description" content="终于有了自己的小天地^_^那么……先记录一个坑吧……##使用hexo-admin插件时，需要在配置文件_config.yml中新增如下的部分：  如上，官方给的示意图上的password_hash是md5密码，而hexo-admin却明确表示需要使用bcrypt密码。 于是，我用java、python分别生成了一波bcrypt加密后的password_hash（bcrypt的特性是每次生成的随机散">
-<meta name="twitter:image" content="http://images/pasted-2.png/">
+<meta name="twitter:title" content="Java反射与动态代理">
+<meta name="twitter:description" content="反射在程序运行时动态创建对象和调用方法，而不需要在提前在程序中写死 Java反射相比较直接new对象而言，更加灵活，很适合框架开发，但是会有一些性能损耗 反射技术是IoC实现的基础，IoC通过读取配置文件来利用Java反射动态地创建对象和调用方法 Book book = null; // **包起来的是灵活可变的参数 try{ book = (Book)Class.forName(&amp;quot;*p">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/09/25/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/10/22/Java反射与动态代理/"/>
 
 
 
@@ -138,7 +136,7 @@
   };
 </script>
 
-  <title>Hello Hexo | Amazing lulu</title>
+  <title>Java反射与动态代理 | Amazing lulu</title>
   
 
 
@@ -260,14 +258,6 @@
     <a href="/archives/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
   </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-schedule">
-    <a href="/schedule/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />日程表</a>
-  </li>
 
       
       
@@ -348,7 +338,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/25/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/22/Java反射与动态代理/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="lulu">
@@ -365,7 +355,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello Hexo
+          <h1 class="post-title" itemprop="name headline">Java反射与动态代理
               
             
           </h1>
@@ -390,28 +380,34 @@
                 
               
 
-              <time title="创建时间：2018-09-25 15:03:00" itemprop="dateCreated datePublished" datetime="2018-09-25T15:03:00+08:00">2018-09-25</time>
+              <time title="创建时间：2018-10-22 10:19:00 / 修改时间：11:15:17" itemprop="dateCreated datePublished" datetime="2018-10-22T10:19:00+08:00">2018-10-22</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-09-28 10:55:52" itemprop="dateModified" datetime="2018-09-28T10:55:52+08:00">2018-09-28</time>
               
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/SSM学习之路/" itemprop="url" rel="index"><span itemprop="name">SSM学习之路</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -440,21 +436,33 @@
       
 
       
-        <h2 id="终于有了自己的小天地"><a href="#终于有了自己的小天地" class="headerlink" title="终于有了自己的小天地^_^"></a>终于有了自己的小天地^_^</h2><h4 id="那么……先记录一个坑吧……"><a href="#那么……先记录一个坑吧……" class="headerlink" title="那么……先记录一个坑吧……"></a>那么……先记录一个坑吧……</h4><p>##使用hexo-admin插件时，需要在配置文件_config.yml中新增如下的部分：</p>
-<p><img src="\\images\pasted-2.png\" alt="_config.yml中的admin配置"></p>
-<p>如上，官方给的示意图上的password_hash是md5密码，而hexo-admin却明确表示需要使用bcrypt密码。</p>
-<p>于是，我用java、python分别生成了一波bcrypt加密后的password_hash（bcrypt的特性是每次生成的随机散列值都不！一！样！），然后怀着激动的心情将如下密文paste在_config.yml的password_hash位置上。</p>
-<p>果不其然，出现了bug！    o(<em>￣︶￣</em>)o</p>
-<p>不管使用哪一个随机散列，输入的密码和配置的bcrypt密码都不对应。</p>
-<p>我百度啊百度，看到了这篇博客，恍然大悟，原来不同版本nodejs使用的hash算法不一样，自然和java、python等的hash算法也可能有所不同。</p>
-<p>顺着博客指导的操作，我使用nodejs的bcrypt算法计算出了我password的hash值，paste到配置文件，在git bash中输入“hexo server -d”</p>
-<p>问题解决了，完美登录！</p>
-<p>但是，我陷入了思考。</p>
-<p>对同样的字符串，bcrypt每次生成的密码都是不一样的，那么后台的登录逻辑到底是什么样的呢？</p>
-<p>于是我查了bcrypt判定password和password_hash是否一致的算法，如下：</p>
-<p>嗦嘎，原来是通过通过某种神秘算法，对我输入的password和预先配置好的password_hash进行计算，如果result==password_hash，那么匹配成功！</p>
-<p>不得不感叹，做密码学研究和信息安全的才是真大佬，这种神秘算法是怎么想出来的哟！</p>
-<h4 id="妙啊"><a href="#妙啊" class="headerlink" title="妙啊"></a>妙啊</h4>
+        <h3 id="反射"><a href="#反射" class="headerlink" title="反射"></a>反射</h3><p>在程序运行时动态创建对象和调用方法，而不需要在提前在程序中写死</p>
+<p>Java反射相比较直接new对象而言，更加灵活，很适合框架开发，但是会有一些性能损耗</p>
+<p>反射技术是IoC实现的基础，IoC通过读取配置文件来利用Java反射动态地创建对象和调用方法</p>
+<pre><code>Book book = null;
+// **包起来的是灵活可变的参数
+try{
+book = (Book)Class.forName(&quot;*package path*&quot;).getConstructor(&quot;*parameter list*&quot;).newInstance(&quot;*parameters*&quot;);
+Method method = book.getClass().getMethod(&quot;*method name*&quot;,&quot;*parameter list*&quot;);
+method.invoke(book, &quot;*paremeters*&quot;)
+}
+catch(.....){
+}
+</code></pre><a id="more"></a>
+<h3 id="动态代理-👩‍💻👩‍💻👩‍💻-Hard"><a href="#动态代理-👩‍💻👩‍💻👩‍💻-Hard" class="headerlink" title="动态代理    👩‍💻👩‍💻👩‍💻 Hard"></a>动态代理    👩‍💻👩‍💻👩‍💻 Hard</h3><p>生成一个代理对象，来控制对真实对象的访问</p>
+<p>1.用getProxy生成代理对象；<br>2.制定代理的逻辑类【代理逻辑类要实现一个接口的一个方法，该方法就是代理对象的逻辑方法，可以控制真实对象的方法】</p>
+<p><strong>JDK动态代理</strong>： 需要接口  【绕得不行啊啊啊，慢慢来慢慢理解】</p>
+<pre><code>// 定义一个接口if,作为代理类
+// 用ifImpl类实现if，作为真实对象类
+// 定义一个JdkProxy类实现InvocationHandler接口：用bind()方法得到一个代理对象proxy；用invoke()方法来描述代理逻辑[在proxy调用方法时，就会进入invoke]
+// 拦截器模式时：程序员只需要关注拦截器提供的接口需要实现哪些方法，而不需要管具体的代理逻辑了。在有拦截器时拦截；无拦截器时就直接反射真实对象的方法了。
+// 测试时，先用真实对象[ifImpl类]调用bind得到一个代理对象[if类]，用代理对象去调用具体方法
+</code></pre><p><strong>CGLIB动态代理</strong>：不需要接口</p>
+<h3 id="一些设计模式"><a href="#一些设计模式" class="headerlink" title="一些设计模式"></a>一些设计模式</h3><p><strong>责任链模式</strong>：对应于一个对象在多个角色中处理的场景</p>
+<p><strong>观察者模式</strong>：一（被观察者，继承Observable类）对多（观察者，实现Observer接口）的依赖关系</p>
+<p><strong>工厂模式</strong>：只需要告知工厂需要什么对象，而不需要关注工厂如何创建对象</p>
+<p><strong>建造者模式</strong>：可以将一个产品的内部表象（属性〉与产品的生成过程分割开来，从而使一个建造过程生成具有不同的内部表象的产品对象。</p>
+
       
     </div>
 
@@ -472,11 +480,41 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Java反射/" rel="tag"><i class="fa fa-tag"></i> Java反射</a>
+          
+            <a href="/tags/动态代理/" rel="tag"><i class="fa fa-tag"></i> 动态代理</a>
+          
+            <a href="/tags/设计模式/" rel="tag"><i class="fa fa-tag"></i> 设计模式</a>
+          
+        </div>
+      
 
       
       
       
 
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/09/25/hello hexo/" rel="next" title="Hello Hexo">
+                <i class="fa fa-chevron-left"></i> Hello Hexo
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/10/22/SSM框架入门/" rel="prev" title="SSM框架及Redis入门🎶🎶🎶">
+                SSM框架及Redis入门🎶🎶🎶 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
 
       
@@ -552,14 +590,62 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
               
 
               
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">分类</span>
+                  
+                </div>
+              
 
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">10</span>
+                    <span class="site-state-item-name">标签</span>
+                  
+                </div>
               
             </nav>
           
@@ -575,7 +661,7 @@
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="https://weibo.com/u/3702302881" target="_blank" title="Weibo"><i class="fa fa-fw fa-globe"></i>Weibo</a>
+                  <a href="gaolu_9585@hust.edu.cn" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
                   
                 </span>
               
@@ -606,7 +692,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#终于有了自己的小天地"><span class="nav-number">1.</span> <span class="nav-text">终于有了自己的小天地^_^</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#那么……先记录一个坑吧……"><span class="nav-number">1.0.1.</span> <span class="nav-text">那么……先记录一个坑吧……</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#妙啊"><span class="nav-number">1.0.2.</span> <span class="nav-text">妙啊</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#反射"><span class="nav-number">1.</span> <span class="nav-text">反射</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#动态代理-👩‍💻👩‍💻👩‍💻-Hard"><span class="nav-number">2.</span> <span class="nav-text">动态代理    👩‍💻👩‍💻👩‍💻 Hard</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#一些设计模式"><span class="nav-number">3.</span> <span class="nav-text">一些设计模式</span></a></li></ol></div>
             
 
           </div>
@@ -661,7 +747,7 @@
 
 
 
-  <div class="theme-info">主题 – <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Pisces</a> v6.4.1</div>
+  <div class="theme-info">主题 – <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Gemini</a> v6.4.1</div>
 
 
 
@@ -817,7 +903,7 @@
   
     <script type="text/javascript">
       window.livereOptions = {
-        refer: '2018/09/25/hello-world/'
+        refer: '2018/10/22/Java反射与动态代理/'
       };
       (function(d, s) {
         var j, e = d.getElementsByTagName(s)[0];
